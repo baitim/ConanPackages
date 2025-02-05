@@ -1,0 +1,20 @@
+name: ConanPackages post-push
+on:
+  push:
+    branches:
+      - main
+jobs:
+  main:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v3
+
+      - name: Open conan packages storage
+        uses: appleboy/ssh-action@master
+        with:
+          host:     ${{ secrets.HOST }}
+          port:     ${{ secrets.PORT }}
+          key:      ${{ secrets.SSHKEY }}
+          script: conan_server
