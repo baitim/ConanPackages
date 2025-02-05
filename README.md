@@ -6,7 +6,6 @@
 
 ## How to use
 <code>conan remote add conan_packages http://188.225.84.75:9300</code><br>
-<code>conan remote login conan_packages -n visitor -p visitor</code><br>
 <code>conan install --requires=\<project\>/\<version\> -r=conan_packages</code>
 
 ## What implemented
