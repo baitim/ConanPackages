@@ -10,6 +10,7 @@
 
 ## What implemented
 1. [matrix](https://github.com/baitim/Matrix), project = "matrix", version = "1.0"
+2. [matrix_chain](https://github.com/baitim/MatrixChain), project = "matrix_chain", version = "1.0"
 
 <p align="center"><img src="https://github.com/baitim/ConanPackages/blob/main/images/monkey.gif" width="40%"></p>
 
