@@ -19,5 +19,4 @@ jobs:
           port:     ${{ secrets.PORT }}
           key:      ${{ secrets.SSHKEY }}
           script: |
-            nohup conan_server & 
-            exit 0
+            tmux new-session -d -s conan_server "conan_server"
