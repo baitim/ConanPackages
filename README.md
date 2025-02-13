@@ -11,6 +11,8 @@
 ## What implemented
 1. [matrix](https://github.com/baitim/Matrix), project = "matrix", version = "1.0", user = "baitim"
 2. [matrix_chain](https://github.com/baitim/MatrixChain), project = "matrix_chain", version = "1.0", user = "baitim"
+3. [triangles3d](https://github.com/baitim/Triangles3D), project = "triangles3d", version = "1.0", user = "baitim"
+4. [trianglesgl](https://github.com/baitim/TrianglesGL), project = "trianglesgl", version = "1.0", user = "baitim"
 
 <p align="center"><img src="https://github.com/baitim/ConanPackages/blob/main/images/monkey.gif" width="40%"></p>
 
