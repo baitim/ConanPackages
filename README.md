@@ -6,11 +6,11 @@
 
 ## How to use
 <code>conan remote add conan_packages http://188.225.84.75:9300</code><br>
-<code>conan install --requires=\<project\>/\<version\> -r=conan_packages</code>
+<code>conan install --requires=\<project\>/\<version\>@\<user\> -r=conan_packages</code>
 
 ## What implemented
-1. [matrix](https://github.com/baitim/Matrix), project = "matrix", version = "1.0"
-2. [matrix_chain](https://github.com/baitim/MatrixChain), project = "matrix_chain", version = "1.0"
+1. [matrix](https://github.com/baitim/Matrix), project = "matrix", version = "1.0", user = "baitim"
+2. [matrix_chain](https://github.com/baitim/MatrixChain), project = "matrix_chain", version = "1.0", user = "baitim"
 
 <p align="center"><img src="https://github.com/baitim/ConanPackages/blob/main/images/monkey.gif" width="40%"></p>
 
