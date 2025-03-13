@@ -19,7 +19,7 @@
 8. [graph](https://github.com/baitim/Graph), project = "graph", version = "1.0", user = "baitim"
 9. [bitonic_sort](https://github.com/baitim/BitonicSort), project = "bitonic_sort", version = "1.0", user = "baitim"
 
-<p align="center"><img src="https://github.com/baitim/ConanPackages/blob/main/images/monkey.gif" width="40%"></p>
+<p align="center"><img src="https://github.com/baitim/ConanPackages/blob/main/images/pig.gif" width="40%"></p>
 
 ## Support
 **This project is created by [baitim](https://t.me/bai_tim)**
