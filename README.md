@@ -5,7 +5,7 @@
  Implementation of the storage of conan packages. 
 
 ## How to use
-<code>conan remote add conan_packages http://188.225.84.75:9300</code><br>
+<code>conan remote add conan_packages http://77.233.223.124</code><br>
 <code>conan install --requires=\<project\>/\<version\>@\<user\> -r=conan_packages</code>
 
 ## What implemented
