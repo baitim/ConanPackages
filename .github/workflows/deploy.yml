@@ -11,13 +11,13 @@ jobs:
       - name: checkout repository
         uses: actions/checkout@v4
 
-      - name: SSH with password
+      - name: Open conan packages storage
         uses: fifsky/ssh-action@master
         with:
-          host:     ${{ secrets.HOST }}
-          user:     ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
-          port:     ${{ secrets.PORT }}
+          host: ${{ secrets.HOST }}
+          user: ${{ secrets.USERNAME }}
+          pass: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
           command: |
             tmux kill-session -t conan_server || true
             tmux new-session -d -s conan_server "conan_server"
