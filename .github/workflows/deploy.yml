@@ -12,13 +12,18 @@ jobs:
       - name: checkout repository
         uses: actions/checkout@v4
 
+      - name: Prepare SSH key
+        run: |
+          echo "${{ secrets.SSHKEY }}" | base64 -d > id_rsa
+          chmod 600 id_rsa
+
       - name: Open conan packages storage
         uses: appleboy/ssh-action@master
         with:
           host:     ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           port:     ${{ secrets.PORT }}
-          key:      ${{ secrets.SSHKEY }}
+          key_path: "id_rsa"
           script: |
             tmux kill-session -t conan_server || true
             tmux new-session -d -s conan_server "conan_server"
