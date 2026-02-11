@@ -20,4 +20,4 @@ jobs:
           key:      ${{ secrets.SSHKEY }}
           script: |
             tmux kill-session -t conan_server || true
-            tmux new-session -d -s conan_server "conan_server"
+            tmux new-session -d -s conan server "conan_server"
